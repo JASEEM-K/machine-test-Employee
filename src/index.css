@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+@layer {
+
+  .input-style {
+    @apply  flex items-center rounded-lg  justify-around w-96 border-2 focus-within:border-purple-500/80 px-2 space-x-3 text-white
+  }
+
+  .input-style input {
+    @apply h-10 w-full outline-none 
+  }
+
+  .authpage-submit {
+    @apply bg-red-400 px-3 py-2 rounded-lg text-white cursor-pointer  hover:scale-105
+  }
+
+.authpage-body {
+  @apply flex w-dvw h-dvh bg-[#28282B] items-center justify-center
+}
+.authpage-style {
+  @apply space-y-4 flex flex-col items-center justify-center 
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+}
